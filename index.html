@@ -12,7 +12,49 @@
         
         <title>Frontend Mentor | Interactive rating component</title>
     </head>
-    <body>
+    <body class="bg-varyDarkBlue font-overpass flex flex-col items-center justify-center h-dvh">
+        <main class="max-w-[416px]">
+            <section class="bg-custom-radial p-6 mx-6 rounded-2xl">
+                <picture>
+                    <img src="assets/icons/icon-star.svg" alt="" class="bg-darkBlue p-4 rounded-full">
+                </picture>
+
+                <div class="mt-6">
+                    <h1 class="text-white font-bold text-2xl">
+                        How did we do?
+                    </h1>
+                    <p class="text-lightGrey mt-3">
+                        Please let us know how we did with your support request. All feedback is appreciated
+                        to help us improve our offering!
+                    </p>
+                </div>
+
+                <div class="mt-6">
+                    <fieldset class="grid grid-cols-5 grid-rows-1 gap-4 text-lightGrey font-bold">
+                        <legend class="hidden">
+                            rating
+                        </legend>
+                        <div class="bg-darkBlue rounded-full relative p-3 hover:text-black hover:bg-white">
+                            <input 
+                                type="radio" 
+                                name="rating" 
+                                id="rating-1" 
+                                value="1"  
+                                class="hidden" 
+                            />
+                            <label for="rating-1" class="relative flex items-center justify-center cursor-pointer">
+                                1
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <button class="bg-orange mt-6 rounded-full w-full py-3 font-bold hover:bg-white">
+                    SUBMIT
+                </button>
+            </section>
+        </main>
+
         <div class="text-center text-xs mt-4">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"  class="text-blue-700">FrontendMentor</a>.
             Coded by <a href="https://github.com/AndDevI" class="text-blue-700">Andrew Raphael</a>.
