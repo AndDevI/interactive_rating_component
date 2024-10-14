@@ -35,11 +35,11 @@ submit.addEventListener('click', () => {
         
         setTimeout(() => {
             sectionRating.classList.add('hidden');
+            sectionThanks.classList.remove('hidden');
         }, 300);
 
-        sectionThanks.classList.remove('hidden');
         setTimeout(() => {
             sectionThanks.classList.replace('opacity-0', 'opacity-100');
-        }, 10); 
+        }, 600); 
     }
 });
